@@ -6,7 +6,6 @@ DONE:
  -TPC 3
  
 TODO:
- -
+ -solve a problem with ESlint
 
-Update:
-  Still trying to solve a problem with ESlint
+
