@@ -1,6 +1,6 @@
 const numberOfSquaresColumn = 8 //board lenght
 const numberOfSquaresTotal = numberOfSquaresColumn * numberOfSquaresColumn
-const breakLine = numberOfSquaresColumn % 2 == 0 ? numberOfSquaresColumn + 1 : numberOfSquaresColumn;
+const breakLine = numberOfSquaresColumn % 2 == 0 ? numberOfSquaresColumn + 1 : numberOfSquaresColumn; //Check if the number is even or odd
 let board = ""
 
 for (let i = 1; i < numberOfSquaresTotal ; i++){ 
