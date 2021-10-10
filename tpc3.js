@@ -12,15 +12,15 @@ function recursion (x){
 }
 
 
-function converter(value){
+function isEven(value){
     const parity = recursion(value)
     if (parity < 0) return null
     return parity === 1 ? false : true
 }
 
-//console.log(converter(20)) //true
-//console.log(converter(-1)) //null
-//console.log(converter(75)) //false
+//console.log(isEven(20)) //true
+//console.log(isEven(-1)) //null
+//console.log(isEven(75)) //false
 
 
 const countBs = function(word){
