@@ -15,7 +15,6 @@ const ATLAS_ID = process.env.ATLAS_CLIENT_ID;
  async function CreateFile(FileName){
      try{
         const jsonArray =await getGameInfo(FileName)
-        //const json = await jsonArray
         return await fs.writeFile(("./games.json"), jsonArray)
      }catch(err){console.log(err)}
 }
