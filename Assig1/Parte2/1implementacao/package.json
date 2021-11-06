@@ -1,0 +1,28 @@
+{
+  "name": "home-work",
+  "version": "1.0.0",
+  "description": "\" home works from PI by Policarpo\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Policarpo",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opracilop/iselpi2122-46934.git"
+  },
+  "bugs": {
+    "url": "https://github.com/opracilop/iselpi2122-46934/issues"
+  },
+  "homepage": "https://github.com/opracilop/iselpi2122-46934#readme",
+  "dependencies": {
+    "node-fetch": "^3.0.0",
+    "sync-request": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "eslint": "^8.0.0",
+    "jest": "^27.3.1"
+  }
+}
