@@ -1,6 +1,6 @@
 "use strict"
 const fetch = require("node-fetch")
-const fs = require("fs/promises")
+const fs = requihttps://github.com/psilva20019re("fs/promises")
 
 module.exports = {CreateFile}
 const ATLAS_HOST = "https://api.boardgameatlas.com/api/"
