@@ -30,7 +30,7 @@ async function getGameInfo(FileName){
     try{
         const fileBuffer = await fs.readFile(FileName)
         const ob = fileBuffer.toString().split("\r\n")
-        const a = ob.map(person => { return IdSearcher(person) })
+        const a = ob.map(person => { return idSearcher(person) })
         const arr = await Promise.all(a)
         return JSON.stringify(arr)
     }catch(err){console.log(err)}
@@ -42,7 +42,7 @@ async function getGameInfo(FileName){
  * Given an ID, returns an object with the information about that game name and URL 
  *@param {String} id ID for a specific board game.
  */
-async function IdSearcher(id){
+async function idSearcher(id){
     try{
         const response = await fetch(ATLAS_HOST + "search?ids=" + id + "&client_id=DKChhl65rY")
         const obj = await response.json()
