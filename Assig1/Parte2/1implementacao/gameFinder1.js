@@ -27,7 +27,7 @@ const ATLAS_ID = process.env.ATLAS_CLIENT_ID;
 function getGameInfo(FileName){
     return fs.readFile(FileName)
         .then(fileBuffer => fileBuffer.toString().split("\r\n"))
-        .then(ob => ob.map(person => { return IdSearcher(person) }))
+        .then(ob => ob.map(person => { return idSearcher(person) }))
         .then(a => Promise.all(a))
         .then(arr => JSON.stringify(arr))
  }  
@@ -38,7 +38,7 @@ function getGameInfo(FileName){
  * Given an ID, returns an object with the information about that game name and URL 
  *@param {String} id ID for a specific board game.
  */
-function IdSearcher(id){
+function idSearcher(id){
     return fetch(ATLAS_HOST + "search?ids=" + id + "&client_id=" + ATLAS_ID)
             .then(response => response.json())
             .then(obj => ({ game: obj["games"]["0"]["name"], url: obj["games"]["0"]["url"] }))
