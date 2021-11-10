@@ -4,7 +4,7 @@ const fs = require("fs/promises")
 
 module.exports = {CreateFile}
 const ATLAS_HOST = "https://api.boardgameatlas.com/api/"
-const ATLAS_ID = process.env.ATLAS_CLIENT_ID;
+const ATLAS_ID = process.env.ATLAS_CLIENT_ID
 
 
 
@@ -44,7 +44,7 @@ async function getGameInfo(FileName){
  */
 async function idSearcher(id){
     try{
-        const response = await fetch(ATLAS_HOST + "search?ids=" + id + "&client_id=DKChhl65rY")
+        const response = await fetch(ATLAS_HOST + "search?ids=" + id + "&client_id=" + ATLAS_ID)
         const obj = await response.json()
         return ({ game: obj["games"]["0"]["name"], url: obj["games"]["0"]["url"] })
     }catch(err){console.log(err)}

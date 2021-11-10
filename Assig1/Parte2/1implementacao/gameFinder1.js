@@ -1,12 +1,10 @@
 "use strict"
 const fetch = require("node-fetch")
-const fs = requihttps://github.com/psilva20019re("fs/promises")
+const fs = require("fs/promises")
 
 module.exports = {CreateFile}
 const ATLAS_HOST = "https://api.boardgameatlas.com/api/"
-const ATLAS_ID = process.env.ATLAS_CLIENT_ID;
-
-
+const ATLAS_ID = process.env.ATLAS_CLIENT_ID
 
  /**
  * Create a json file named "games.json", based on the String representative of the given text file
